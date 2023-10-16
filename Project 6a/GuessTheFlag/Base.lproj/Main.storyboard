@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GuessTheFlag" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="Usi-AU-KGf">
+                                <rect key="frame" x="96.666666666666686" y="222" width="200" height="408"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flag Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="39C-C7-7cr">
+                                        <rect key="frame" x="52.999999999999979" y="0.0" width="93.666666666666686" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9a1-S7-X5b">
+                                        <rect key="frame" x="0.0" y="52" width="200" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="9a1-S7-X5b" secondAttribute="height" multiplier="2:1" id="XfC-sM-DLk"/>
+                                            <constraint firstAttribute="height" constant="100" id="iaE-HT-btR"/>
+                                            <constraint firstAttribute="width" constant="200" id="jyh-IG-Trq"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="estonia.png"/>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="duc-Dj-dPL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wof-2e-qUO">
+                                        <rect key="frame" x="0.0" y="180" width="200" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="3u9-8s-XEt"/>
+                                            <constraint firstAttribute="height" constant="100" id="Kip-T8-H3e"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="estonia.png"/>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lu4-2j-3TJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f67-eb-EMS">
+                                        <rect key="frame" x="0.0" y="308" width="200" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="TbW-oj-NDw"/>
+                                            <constraint firstAttribute="height" constant="100" id="kB9-K4-yc4"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="estonia.png"/>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vg4-Tf-Jgw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Wof-2e-qUO" firstAttribute="height" secondItem="9a1-S7-X5b" secondAttribute="height" id="cdV-QM-hEC"/>
+                                    <constraint firstItem="f67-eb-EMS" firstAttribute="height" secondItem="Wof-2e-qUO" secondAttribute="height" id="tgd-rt-dGB"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Guess The Flag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aex-XW-zaK">
+                                <rect key="frame" x="96" y="59" width="201" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Score: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUI-8C-0IX">
+                                <rect key="frame" x="170" y="790" width="53.333333333333343" height="20.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Usi-AU-KGf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5WR-oo-L6E"/>
+                            <constraint firstItem="Usi-AU-KGf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9wb-EN-SmW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="LUI-8C-0IX" secondAttribute="bottom" constant="5" id="GJR-fb-EYY"/>
+                            <constraint firstItem="LUI-8C-0IX" firstAttribute="top" relation="lessThanOrEqual" secondItem="Usi-AU-KGf" secondAttribute="bottom" constant="160" id="QEk-Vh-9cD"/>
+                            <constraint firstItem="LUI-8C-0IX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kgp-qd-MpD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button1" destination="9a1-S7-X5b" id="bAA-M4-3Lf"/>
+                        <outlet property="button2" destination="Wof-2e-qUO" id="ytS-IN-UBe"/>
+                        <outlet property="button3" destination="f67-eb-EMS" id="haS-hD-euM"/>
+                        <outlet property="flagLabel" destination="39C-C7-7cr" id="DCN-rF-Z7Q"/>
+                        <outlet property="scoreLabel" destination="LUI-8C-0IX" id="rIy-hN-z1E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="72.51908396946564" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="estonia.png" width="200" height="100"/>
+    </resources>
+</document>
